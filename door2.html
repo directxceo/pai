@@ -7,8 +7,19 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <video src="v2.mp4" autoplay loop playsinline style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;"></video>
+  <video id="vid" loop playsinline muted style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none;">
+    <source src="v2.mp4" type="video/mp4" />
+  </video>
   <script>
+    const v = document.getElementById('vid');
+    v.load();
+    v.play().then(() => {
+      v.muted = false;
+    }).catch(() => {});
+    document.addEventListener('click', () => {
+      v.muted = false;
+      v.play();
+    }, { once: true });
     document.addEventListener('contextmenu', e => e.preventDefault());
     document.addEventListener('dragstart', e => e.preventDefault());
   </script>
