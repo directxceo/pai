@@ -7,6 +7,9 @@
     'int_6.jpg','int_7.jpg','int_8.jpg','int_9.jpg','int_10.jpg',
     'int_11.jpg','int_12.jpg','int_13.jpg','int_14.jpg','int_15.jpg',
     'int_16.jpg','int_17.jpg','int_18.jpg','int_19.jpg','int_20.jpg',
+    'int_21.jpg','int_22.jpg','int_23.jpg','int_24.jpg','int_25.jpg',
+    'int_26.jpg','int_27.jpg','int_28.jpg','int_29.jpg','int_30.jpg',
+    'int_30.jpg','int_31.jpg','int_51.jpg','int_52.jpg',
   ];
 
   function shuffle(arr) {
